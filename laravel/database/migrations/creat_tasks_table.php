@@ -6,10 +6,10 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTasksTable extends Migration
 {
-
-
- @return void
-
+    /**
+     *
+     * @return void
+     */
     public function up()
     {
         Schema::create('tasks', function (Blueprint $table) {
@@ -22,6 +22,8 @@ class CreateTasksTable extends Migration
         });
     }
 
+    /**
+     * Reverse the migrations.
      *
      * @return void
      */
@@ -30,6 +32,3 @@ class CreateTasksTable extends Migration
         Schema::dropIfExists('tasks');
     }
 }
-
-
-
